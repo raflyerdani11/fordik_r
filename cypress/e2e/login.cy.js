@@ -23,7 +23,7 @@ describe('Login Flow (CI Safe)', () => {
     //
     cy.visit('http://localhost:5173/login');
 
-    cy.get('input[placeholder="EMAIL"]').type('qazqaz@qazqazzxc.com');
+    cy.get('input[placeholder="EMAIL"]').type('qazqaz@qazqaz.com');
     cy.get('input[placeholder="KATA SANDI"]').type('qazqazqaz');
 
     cy.contains('Login').click();
