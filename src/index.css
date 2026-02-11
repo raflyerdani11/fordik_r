@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* LOADING */
+.containerLoading {
+  display: flex;
+  position: fixed;
+  background-color: rgb(215, 31, 31);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerLoadingg p {
+  color: black;
+  font-size: xx-large;
+}
+
+/* MAIN LAYOUT */
+
+span {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 70px;
+  padding: 10px 35px;
+  align-items: center;
+  font-size: 30px;
+}
+
+header p a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.containerMainLayout1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerMainLayout2 {
+  width: 100%;
+  border: 1px black solid;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 30px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.bottomNav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* THREADS PAGE */
+
+.containerThreads {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerThreads p {
+  font-size: x-large;
+}
+
+.containerThreads2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerThreads2 a {
+  text-decoration: none;
+}
+
+/* THREADS DETAIL PAGE */
+
+.containerThreadDetail {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  padding: 15px;
+  gap: 60px;
+  border-radius: 5px;
+}
+
+.containerThreadDetail .containerContent {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 5px;
+}
+
+.containerThreadDetail .containerContent .category {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.containerThreadDetail .containerContent .containerTitleDisc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: black;
+}
+
+.containerThreadDetail .containerContent .containerTitleDisc .title {
+  font-weight: bold;
+  font-size: xx-large;
+  color: black;
+}
+
+.containerThreadDetail .containerContent .containerTitleDisc .desc {
+  font-size: larger;
+  line-height: 30px;
+}
+
+.containerThreadDetail .containerContent .containerReaction {
+  display: flex;
+  gap: 10px;
+}
+
+.containerThreadDetail .containerContent .containerReaction .reaction {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  gap: 7px;
+}
+
+.containerThreadDetail .containerContent .containerReaction .reaction2 {
+  display: flex;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  gap: 7px;
+}
+
+.containerThreadDetail .containerComment {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 30px;
+  font-size: larger;
+}
+
+.containerThreadDetail .containerComment .containerAddComment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.containerThreadDetail
+  .containerComment
+  .containerAddComment
+  form
+  .containerAddComment2
+  textarea {
+  width: 100%;
+  padding: 7px;
+  resize: none;
+}
+
+.containerThreadDetail .containerComment .containerResultComment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ITEM THREADS */
+
+.itemThread {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.itemThread .category {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.itemThread .containerTitleDisc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: black;
+}
+
+.itemThread .containerTitleDisc .title {
+  font-size: larger;
+  color: black;
+}
+
+.itemThread .containerTitleDisc .desc {
+  font-size: medium;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* jumlah baris */
+  -webkit-box-orient: vertical;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.itemThread .containerReaction {
+  display: flex;
+  gap: 10px;
+}
+
+.itemThread .reaction {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  gap: 7px;
+}
+
+.itemThread .reaction2 {
+  display: flex;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  gap: 7px;
+}
+
+/* ITEM THREADS COMMENT */
+
+.containerItemThreadComment {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  gap: 20px;
+}
+
+.containerItemThreadComment .containerHeaderComment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerItemThreadComment .containerHeaderComment .containerProfile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.containerItemThreadComment .containerHeaderComment .containerProfile img {
+  width: 40px;
+  border-radius: 100%;
+}
+
+.containerItemThreadComment .containerReaction {
+  display: flex;
+  gap: 10px;
+  font-size: medium;
+}
+
+.containerItemThreadComment .containerReaction .reaction {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  gap: 7px;
+}
+
+/* LOGIN PAGE */
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+form .containerLogin2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .containerLogin2 input {
+  padding: 7px;
+}
+
+/* REGISTER PAGE */
+.containerRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+form .containerRegister2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .containerRegister2 input {
+  padding: 7px;
+}
+
+/* REGISTER PAGE */
+.containerAddThread {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+form .containerAddThread2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .containerAddThread2 input {
+  padding: 7px;
+}
+
+form .containerAddThread2 textarea {
+  padding: 7px;
+  resize: none;
+}
