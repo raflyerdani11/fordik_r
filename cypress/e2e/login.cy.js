@@ -33,5 +33,3 @@ describe('Login Flow (CI Safe)', () => {
     cy.location('pathname').should('eq', '/');
   });
 });
-
-//
